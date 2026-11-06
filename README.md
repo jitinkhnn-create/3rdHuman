@@ -8,7 +8,10 @@ Live domain: **3rdhuman.co.in**
 
 | File | Page |
 |---|---|
-| `index.html` | Home: the three humans, four goals, six habits |
+| `index.html` | Home: StoryBrand page, "Live the life that makes you complete." |
+| `sessions.html` | Book a session (one to one, or 3 to 5 students) via WhatsApp |
+| `free-chapter.html` | Free chapter: Meeting Your Inner Voice |
+| `library.html` | Library of books, tools and talks, by need |
 | `dream-world.html` | The Dream World and the UN Global Goals link |
 | `onee.html` | Onee Language: roots, greetings, feelings, charts |
 | `books.html` | Through the Looking Glass, Meeting Myself, Building Tomorrow |

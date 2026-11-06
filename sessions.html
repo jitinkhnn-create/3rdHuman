@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book a Session</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Book a one-to-one or small-group session with Jitin Khanna, on WhatsApp, by phone or by email.">
+<meta property="og:title" content="Book a Session"><meta property="og:description" content="Book a one-to-one or small-group session with Jitin Khanna, on WhatsApp, by phone or by email.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Noto+Sans+Devanagari:wght@500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>:root{--accent:var(--gold)}</style></head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="index.html"><img class="mark" src="img/logo-mark.png" alt="" width="240" height="165"><span>3rd Human</span></a><nav class="main" aria-label="Main"><a href="index.html">Home</a><a href="library.html">Library</a><a href="free-chapter.html">Free chapter</a><a href="sessions.html" aria-current="page">Book a session</a><a href="about.html">About</a></nav></div></header>
+<main>
+<section class="pagehead"><div class="wrap stack"><span class="badge">Talk it through</span><h1>Book a session</h1>
+<p class="lead">Sometimes reading is not enough, and you need someone to think it through with. A session is a calm, private conversation with Jitin Khanna about what you are going through and what you want for yourself.</p></div></section>
+
+<section><div class="wrap">
+ <div class="sechead"><span class="eyebrow">Two ways to meet</span><h2>Choose what suits you</h2></div>
+ <div class="grid two">
+  <div class="card" style="--c:var(--forest)"><span class="tag">One to one</span><h3>Just you and Jitin</h3><p>For when something personal needs space: feeling stuck, a hard decision, a relationship, or simply wanting to understand yourself better.</p></div>
+  <div class="card" style="--c:var(--gold)"><span class="tag">Small group · 3 to 5 students</span><h3>Grow together</h3><p>For a few students who want to understand their feelings, handle pressure and comparison, and find their own path, together with friends.</p></div>
+ </div>
+</div></section>
+
+<section class="band"><div class="wrap split">
+ <div class="stack"><span class="eyebrow">What to expect</span><h2>No judgement. No labels.</h2>
+ <ul class="ticks"><li>You talk about what is really going on, in your own words.</li><li>Together, you look at what sits underneath it: the feeling, the belief, the pattern.</li><li>You leave with one or two simple practices to try in your daily life.</li><li>What you share stays between you and Jitin.</li></ul></div>
+ <blockquote class="quote">"This is not a test. It's a mirror to help you understand yourself better."<cite>From Building Tomorrow</cite></blockquote>
+</div></section>
+
+<section id="book"><div class="wrap">
+ <div class="sechead"><span class="eyebrow">Book in one message</span><h2>Tell us a little, and we'll reply on WhatsApp</h2><p class="lead">Fill in what you like and press the button. It opens WhatsApp with your message ready to send. Timings and fees are shared when we reply.</p></div>
+ <form class="bookform" id="bookform" novalidate>
+  <label for="bf-name">Your name</label><input id="bf-name" name="pname" type="text" autocomplete="name" placeholder="e.g. Priya">
+  <fieldset><legend>Type of session</legend><div class="chips">
+   <input type="radio" name="kind" id="bf-one" value="One to one" checked><label for="bf-one">One to one</label>
+   <input type="radio" name="kind" id="bf-group" value="Small group (3 to 5 students)"><label for="bf-group">Small group, 3 to 5 students</label></div></fieldset>
+  <label for="bf-about">What would you like to talk about? <span class="small">(optional)</span></label><textarea id="bf-about" name="about" rows="3" placeholder="A line or two is enough"></textarea>
+  <div class="row"><button class="btn wa" type="submit">Send on WhatsApp</button><span class="small" id="bf-note">Nothing is stored on this website.</span></div>
+ </form>
+ <div class="stack" style="margin-top:28px;gap:10px"><span class="tag">Or reach us directly</span><div class="contact-row">
+ <a class="btn wa" href="https://wa.me/919910300702?text=Hi%20Jitin%2C%20I%20found%203rd%20Human%20and%20would%20like%20to%20know%20about%20a%20session." target="_blank" rel="noopener">WhatsApp</a>
+ <a class="btn ghost" href="tel:+919910300702">Call +91 99103 00702</a>
+ <a class="btn ghost" href="mailto:jitin.khnn@gmail.com?subject=Session%20with%203rd%20Human">Email</a>
+</div>
+<p class="small">WhatsApp or call <b class="sel">+91 99103 00702</b> · Email <b class="sel">jitin.khnn@gmail.com</b></p></div>
+</div></section>
+<script>
+(function(){
+ var f=document.getElementById('bookform');
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=f.elements.pname.value.trim(), k=(f.querySelector('input[name=kind]:checked')||{}).value||'', a=f.elements.about.value.trim();
+  var msg='Hi Jitin, I would like to book a session with 3rd Human.'+(n?'\nName: '+n:'')+'\nType: '+k+(a?'\nAbout: '+a:'');
+  var url='https://wa.me/919910300702?text='+encodeURIComponent(msg);
+  var w=window.open(url,'_blank','noopener');
+  if(!w) location.href=url;
+  document.getElementById('bf-note').textContent='Opening WhatsApp. If it does not open, message +91 99103 00702 directly.';
+ });
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+<div class="stack" style="gap:6px"><strong>3rd Human</strong><span>A circle of people who stand for each other.</span><span>Ekay. We are One.</span><span>Created by Jitin Khanna.</span></div>
+<nav aria-label="Footer"><a href="index.html">Home</a><a href="library.html">Library</a><a href="free-chapter.html">Free chapter</a><a href="sessions.html">Book a session</a><a href="about.html">About</a><a href="dream-world.html">Dream World</a><a href="onee.html">Onee</a><a href="books.html">Books</a><a href="podcasts.html">Podcasts</a><a href="tools.html">Tools</a><a href="emonav.html">EmoNav</a><a href="conspread.html">Conspread</a><a href="stethoscope.html">Emotional Stethoscope</a><a href="belief-ledger.html">Belief Ledger</a></nav>
+<div class="stack" style="gap:6px"><span>Write to us</span><span class="contact">jitin.khnn@gmail.com</span><span class="contact">+91 99103 00702</span><a href="https://wa.me/919910300702?text=Hi%20Jitin%2C%20I%20found%203rd%20Human%20and%20would%20like%20to%20talk." target="_blank" rel="noopener">Message on WhatsApp</a></div>
+</div></footer>
+<a class="wa-float" href="https://wa.me/919910300702?text=Hi%20Jitin%2C%20I%20found%203rd%20Human%20and%20would%20like%20to%20talk." target="_blank" rel="noopener" aria-label="Message Jitin on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span>Talk to us</span></a>
+</body></html>
