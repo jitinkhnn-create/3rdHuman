@@ -470,3 +470,26 @@ footer.site{background:var(--footbg)}
 .feels b{font-family:var(--f-display);font-weight:600;color:var(--navy)}
 .feels span{color:var(--muted);font-size:.98rem}
 .band .promises{margin-top:24px}
+
+/* ---------- v13 ---------- */
+.why3{font-size:1rem;color:var(--ink);padding:12px 16px;border-radius:12px;background:var(--surface);border:1px solid var(--line);max-width:46ch}
+.why3 b{color:var(--pink)}
+.whatif{font-family:var(--f-display);font-weight:500;font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.3;color:var(--navy);max-width:30ch;text-wrap:balance}
+.lens-more{margin-top:16px}
+.lens-more > summary{background:var(--surface)}
+.me{display:flex;gap:16px;align-items:flex-start}
+.me > div{min-width:0}
+.me h3{font-size:1.3rem;color:var(--navy);margin-bottom:6px}
+.me p{color:var(--muted)}
+.mono{flex:none;width:64px;height:64px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-family:var(--f-display);font-weight:600;font-size:1.3rem;letter-spacing:.04em}
+.basics{margin-top:22px;max-width:62ch;color:var(--ink)}
+
+/* v14: pricing */
+.price{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));max-width:860px}
+.price > div{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.price > div:first-child{border:2px solid var(--pink)}
+.price .tag{color:var(--pink)}
+.price b{font-family:var(--f-display);font-weight:600;font-size:1.5rem;color:var(--navy)}
+.price b small{font-size:.9rem;font-weight:500;color:var(--muted)}
+.price span:last-child{color:var(--muted);font-size:.96rem}
+.free15{font-weight:600;color:var(--pink);font-size:1rem}
